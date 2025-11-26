@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PC Builder Pro — Dark Neon</title>
+  <link rel="stylesheet" href="styles_fixed.css" />
+  <script defer src="script_fixed.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <nav class="nav-inner">
+      <div class="logo">PC Builder <span class="pro">Pro</span></div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#build">Build</a>
+        <a href="#components">Components</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="cart" title="Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+        <span class="total-price">₹0</span>
+      </div>
+
+      <button id="mobileMenuBtn" class="mobile-menu" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Build your dream PC — Dark Neon</h1>
+        <p>Pick compatible parts, see instant totals and compatibility checks.</p>
+        <a href="#build" class="cta">Start Building</a>
+      </div>
+    </section>
+
+    <section id="build" class="builder-section">
+      <h2>PC Builder</h2>
+      <div class="builder-container">
+        <aside class="components-list">
+          <!-- Component categories -->
+          <div class="component-category" data-category="processor">
+            <h3>Processor (CPU)</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="motherboard">
+            <h3>Motherboard</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="gpu">
+            <h3>Graphics Card (GPU)</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="ram">
+            <h3>RAM</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="storage">
+            <h3>Storage</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="psu">
+            <h3>Power Supply (PSU)</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="case">
+            <h3>PC Case</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="cooling">
+            <h3>Cooling</h3>
+            <div class="component-options"></div>
+          </div>
+
+          <div class="component-category" data-category="peripherals">
+            <h3>Peripherals</h3>
+            <div class="component-options"></div>
+          </div>
+        </aside>
+
+        <aside class="build-summary">
+          <h3>Your Build</h3>
+          <div class="compatibility-messages" id="compatibilityMessages" aria-live="polite"></div>
+          <div class="selected-components"></div>
+
+          <div class="total">
+            <h4>Total: <span class="total-amount">₹0</span></h4>
+            <button class="checkout-btn">Proceed to Checkout</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="components" class="info-section">
+      <h2>About Components</h2>
+      <p class="muted">This demo uses public images from Unsplash. Replace image URLs with your assets if you want to run offline.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h4>About</h4>
+        <p>PC Builder Pro — a demo to assemble and validate PC components.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#build">Build</a></li>
+          <li><a href="#components">Components</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>info@pcbuilderpro.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 PC Builder Pro</div>
+  </footer>
+</body>
+</html>
